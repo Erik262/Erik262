@@ -16,11 +16,10 @@ jobs:
       - uses: actions/checkout@v5
 
       - uses: yoshi389111/github-profile-3d-contrib@latest
-        with:
-          settings: settings.json
         env:
           GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
+          SETTING_JSON: settings.json
 
       - name: Commit & Push
         run: |
