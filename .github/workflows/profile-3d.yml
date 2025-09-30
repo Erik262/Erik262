@@ -19,7 +19,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.MY_PERSONAL_ACCESS_TOKEN }}
           USERNAME: ${{ github.repository_owner }}
-          SETTING_JSON: X_settings.json
 
       - name: Commit & Push
         run: |
